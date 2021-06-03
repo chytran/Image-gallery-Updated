@@ -1,0 +1,877 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+body { 
+  background-color: #111;
+}
+
+
+/* global */
+.button {
+  text-align: center;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #121212;
+  border-radius: 4px;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  opacity: 0.9;
+  transition: 0.7s ease;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.5rem;
+}
+
+/* nav */
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  z-index: 10000;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 5rem;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  opacity: 0.89;
+}
+
+.list-parent-2 {
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.list-parent-2:hover {
+  opacity: 0.8;
+  transition: 0.5s ease;
+  border: 4px solid #111;
+}
+
+.list-parent-2:hover > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+.list-parent-2 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+
+.list-parent-2 ul .list-child {
+  background-color: #111;
+  padding: 0 2rem;
+  width: 13rem;
+  border: 1px solid #fff;
+  margin-top: 1px;
+}
+
+.list-parent-2 ul .list-child:hover {
+  color: #fff;
+  opacity: 1;
+  padding-left: 0.1px;
+  transition: 0.5s ease;
+}
+
+.list-parent-2 ul .list-child a {
+  color: #fff;
+  transition: 0.5s ease;
+  font-size: 1rem;
+}
+
+
+/* hero */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40rem;
+  z-index: 1;
+  background: linear-gradient(to top, #111, transparent);
+}
+
+.fitBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  transition: 10s ease;
+  
+}
+
+.introduction {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.introduction_title {
+  position: relative;
+  font-size: 4rem;
+  color: #fff;
+  opacity: 1;
+  z-index: 1;
+  left: -100%;
+  transform: translateX(100%);
+  transition: transform 2.5s ease;
+}
+
+.introduction_text {
+  position: relative;
+  color: #fff;
+  font-size: 2.5rem;
+  left: 100%;
+  transform: translateX(-130%);
+  transition: transform 2.5s ease;
+}
+
+
+/* gallery */
+
+.gallery {
+  text-align: center;
+  margin-top: 6rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery_title {
+  position: relative;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.gallery-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.img-container {
+  position: relative;
+  min-width: 350px;
+  width: 450px;
+  height: 28em;
+  background: #fff;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.img-container {
+  opacity: 0.7;
+}
+
+.img-container:hover {
+  opacity: 1;
+}
+
+.img-container-box {
+  width: 90%;
+  height: 375px;
+  position: relative;
+  left: 1.4rem;
+  top: 0.9rem;
+}
+
+.fitBg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.text {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+
+/* gallery space */
+
+.gallery-space {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+}
+
+/* ----------------------------------- WATERFALL PAGE ------------------------------------------- */
+/* gallery waterfall */
+
+.gallery-waterfall {
+  position: relative;
+  width: 100%;
+}
+
+.waterfall-image-container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fitBg-waterfall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  opacity: 0.3;
+}
+
+.gallery_title_waterfall {
+  color: #fff;
+  position: relative;
+  padding-top: 10rem;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.content_waterfall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* ------------------------------ Pyramid ------------------------------- */
+/* Gallery Pyramid */
+
+.img-container-detailed {
+  position: relative;
+  min-width: 350px;
+  width: 550px;
+  height: 40em;
+  background: #191919;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.img-container-box-detailed {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.gallery-pyramid {
+  position: relative;
+  width: 100%;
+}
+
+.fitBg-pyramid{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0.3;
+}
+
+.content_pyramid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery_title_pyramid {
+  color: #fff;
+  position: relative;
+  padding-top: 10rem;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.content_pyramid .gallery-container .img-container {
+  position: relative;
+  min-width: 350px;
+  width: 750px;
+  height: 52em;
+  background: #191919;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.content_pyramid .gallery-container .img-container h2 {
+  font-size: 3rem;
+  transition: 0.5s ease;
+  padding-top: 1rem;
+}
+
+.content_pyramid .gallery-container .img-container p {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.content_pyramid .gallery-container .img-container .text-container {
+  transition: 0.5s ease;
+}
+
+
+/* --------------------------------- Skyscraper ------------------------------- */
+/* Skyscraper Gallery */
+
+.gallery-skyscraper {
+  position: relative;
+  width: 100%;
+}
+
+.fitBg-skyscraper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 50vh;
+  opacity: 0.3;
+}
+
+.gallery_title_skyscraper {
+  color: #fff;
+  position: relative;
+  padding-top: 10rem;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.content_skyscraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.content_skyscraper .gallery-container .img-container {
+  position: relative;
+  min-width: 350px;
+  width: 750px;
+  height: 52em;
+  background: #191919;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.content_skyscraper .gallery-container .img-container h2 {
+  font-size: 3rem;
+  transition: 0.5s ease;
+  padding-top: 1rem;
+}
+
+.content_skyscraper .gallery-container .img-container p {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.content_skyscraper .gallery-container .img-container .text-container {
+  transition: 0.5s ease;
+}
+
+
+/* ------------------------------ Tokyotokyo------------------------------- */
+/* Gallery Tokyo */
+
+.img-container-detailed {
+  position: relative;
+  min-width: 350px;
+  width: 550px;
+  height: 40em;
+  background: #191919;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.img-container-box-detailed {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.gallery-tokyo {
+  position: relative;
+  width: 100%;
+}
+
+.fitBg-tokyo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0.3;
+}
+
+.content_tokyo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery_title_tokyo {
+  color: #fff;
+  position: relative;
+  padding-top: 10rem;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.content_tokyo .gallery-container .img-container {
+  position: relative;
+  min-width: 350px;
+  width: 750px;
+  height: 52em;
+  background: #191919;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.content_tokyo .gallery-container .img-container h2 {
+  font-size: 3rem;
+  transition: 0.5s ease;
+  padding-top: 1rem;
+}
+
+.content_tokyo .gallery-container .img-container p {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.content_tokyo .gallery-container .img-container .text-container {
+  transition: 0.5s ease;
+}
+
+
+/* ------------------------------ Snow ------------------------------- */
+/* Gallery SnowSnow */
+
+.img-container-detailed {
+  position: relative;
+  min-width: 350px;
+  width: 550px;
+  height: 40em;
+  background: #191919;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.img-container-box-detailed {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.gallery-Snow {
+  position: relative;
+  width: 100%;
+}
+
+.fitBg-Snow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0.3;
+}
+
+.content_Snow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery_title_Snow {
+  color: #fff;
+  position: relative;
+  padding-top: 10rem;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.content_Snow .gallery-container .img-container {
+  position: relative;
+  min-width: 350px;
+  width: 750px;
+  height: 52em;
+  background: #191919;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.content_Snow .gallery-container .img-container h2 {
+  font-size: 3rem;
+  transition: 0.5s ease;
+  padding-top: 1rem;
+}
+
+.content_Snow .gallery-container .img-container p {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.content_Snow .gallery-container .img-container .text-container {
+  transition: 0.5s ease;
+}
+
+
+/* ------------------------------ Eiffel ------------------------------- */
+/* Gallery Eiffel */
+
+.img-container-detailed {
+  position: relative;
+  min-width: 350px;
+  width: 550px;
+  height: 40em;
+  background: #191919;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.img-container-box-detailed {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.gallery-Eiffel {
+  position: relative;
+  width: 100%;
+}
+
+.fitBg-Eiffel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0.3;
+}
+
+.content_Eiffel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery_title_Eiffel {
+  color: #fff;
+  position: relative;
+  padding-top: 10rem;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.content_Eiffel .gallery-container .img-container {
+  position: relative;
+  min-width: 350px;
+  width: 750px;
+  height: 52em;
+  background: #191919;
+  margin: 10px;
+  transition: 0.5s ease;
+}
+
+.content_Eiffel .gallery-container .img-container h2 {
+  font-size: 3rem;
+  transition: 0.5s ease;
+  padding-top: 1rem;
+}
+
+.content_Eiffel .gallery-container .img-container p {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.content_Eiffel .gallery-container .img-container .text-container {
+  transition: 0.5s ease;
+}
+
+
+
+
+
+/* ------------------------ Adjust to UI ------------------------- */
+
+@media only screen and (max-width: 750px) {
+  
+  .introduction_title {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .introduction_text {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .img-container-box {
+    width: 90%;
+    height: 300px;
+    position: relative;
+    transform: translateX(-10%);
+    top: 0.9rem;
+  }
+
+  .fav-button-1,
+  .fav-button-2,
+  .fav-button-3,
+  .fav-button-4,
+  .fav-button-5,
+  .fav-button-6 {
+    color: #fff;
+    background: #111;
+    padding: 0.5rem 0.7rem;
+    margin-top: -3rem;
+    transform: translateX(10%);
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .unfav-button-1,
+  .unfav-button-2,
+  .unfav-button-3,
+  .unfav-button-4,
+  .unfav-button-5,
+  .unfav-button-6 {
+    color: #fff;
+    background: red;
+    padding: 0.5rem 0.7rem;
+    margin-top: -3rem;
+    margin-left: 1rem;
+    transform: translateX(-6%);
+    cursor: pointer;
+  }
+
+  .fitBg-waterfall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0.3;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .introduction {
+    text-align: center;
+  }
+  
+  .introduction_title {
+    text-align: center;
+    font-size: 4rem;
+  }
+  
+  .introduction_text {
+    position: relative;
+    color: #fff;
+    font-size: 2.5rem;
+    left: 100%;
+    transform: translateX(-100%);
+    transition: transform 2.5s ease;
+  }
+
+  .img-container {
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 26em;
+    background: #191919;
+    margin: 10px;
+    transition: 0.5s ease;
+  }
+
+  
+}
+
+.set-1 {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.set-2 {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+/* FAVORITE AND UNFAVORITE BUTTONS */
+.fav-button-1,
+.fav-button-2,
+.fav-button-3,
+.fav-button-4,
+.fav-button-5,
+.fav-button-6 {
+  color: #fff;
+  background: #111;
+  padding: 0.5rem 0.7rem;
+  margin-top: -3rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.unfav-button-1,
+.unfav-button-2,
+.unfav-button-3,
+.unfav-button-4,
+.unfav-button-5,
+.unfav-button-6 {
+  color: #fff;
+  background: red;
+  padding: 0.5rem 0.7rem;
+  margin-top: -3rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.fav-button-1:hover,
+.fav-button-2:hover,
+.fav-button-3:hover,
+.fav-button-4:hover,
+.fav-button-5:hover,
+.fav-button-6:hover {
+  color: #fff;
+  background: grey;
+  transition: 0.3s;
+}
+
+.unfav-button-1:hover,
+.unfav-button-2:hover,
+.unfav-button-3:hover,
+.unfav-button-4:hover,
+.unfav-button-5:hover,
+.unfav-button-6:hover {
+  color: black;
+  background-color: orange;
+  transition: 0.3s;
+}
+
+#watercheck {
+  color: yellow;
+  font-size: 5rem;
+}
+
+
+
