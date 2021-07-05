@@ -176,7 +176,7 @@ var pages6 = [
     "snow.html",
 ]
 
-// function to change image, title, and sentences in a time frame
+// //function to change image, title, and sentences in a time frame
 // function change (image, pages) {
 //     for (let i = 1; i < image.length; i++){
 //         setInterval(function timer() {
@@ -237,7 +237,7 @@ var pages6 = [
 //     }
 // }
 
-// call the changing function
+// //call the changing function
 // change(imageGallery,  pages);
 // change2(imageGallery2, pages2);
 // change3(imageGallery3, pages3);
